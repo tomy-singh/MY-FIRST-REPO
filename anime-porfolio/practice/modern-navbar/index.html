@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Animated Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <canvas id="blossom-canvas"></canvas>
+
+    <header class="header">
+        <h1>Modern Animated Navbar</h1>
+        <p>Click on the buttons to navigate through sections</p>
+    </header>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main class="main-content" id="mainContent">
+            <div class="content-display">
+                <h1 id="activeSection">Home</h1>
+                <p>Welcome to the <span id="sectionName">Home</span> section</p>
+            </div>
+        </main>
+
+        <!-- Modern Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <button class="nav-button active" data-section="home" data-bg="#E8F5E8">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-label">Home</span>
+                </button>
+                
+                <button class="nav-button" data-section="tasks" data-bg="#E0F6FF">
+                    <span class="nav-icon">✓</span>
+                    <span class="nav-label">Tasks</span>
+                </button>
+                
+                <button class="nav-button" data-section="notifications" data-bg="#FFF5E6">
+                    <span class="nav-icon">🔔</span>
+                    <span class="nav-label">Notifications</span>
+                </button>
+                
+                <button class="nav-button" data-section="profile" data-bg="#F5E6FF">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-label">Profile</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
